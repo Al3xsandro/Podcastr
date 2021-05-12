@@ -21,5 +21,13 @@
 ---
 
  <h3>Imagens</h3>
+ <img src="https://user-images.githubusercontent.com/63478331/117904423-b91e8600-b2a7-11eb-96a8-33d3c1ed3985.png" alt="homepage">
  
  <h3>Configurando o projeto</h3>
+
+    1- Clone o repositório em seu computador.
+    2- Verifique se você tem o nodejs instalando em seu sistema operacional.
+    3- Após isso, acesse o projeto através do terminal disponível em seu computador, e execute o comando `npm` para efetuar a instalação das dependências!
+    4- Crie um arquivo `.env`, e configure as chaves de conexão com seu banco de dados postgres.
+    5- Execute o projeto atráves do comando `npm start`.
+    `Em caso de problemas ou dúvidas, entre em contato ou abra um issue!`
