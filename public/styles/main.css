@@ -31,7 +31,7 @@ header nav li {
   font-size: 18px;
 }
 
-main {
+section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,12 +42,12 @@ main {
   padding: 2rem;
 }
 
-main .title h2 {
+section .title h2 {
   font-family: 'Roboto', sans-serif;
   color: #4b4b4b;
 }
 
-main .addEpisode {
+section .addEpisode {
   padding: 10px;
   width: 5rem;
   border-radius: 4px;
@@ -58,7 +58,75 @@ main .addEpisode {
   opacity: 0.7;
 }
 
-main .addEpisode:hover {
+section .addEpisode:hover {
   opacity: 0.6;
+}
+
+section table {
+  margin: 1rem;
+  width: 100%;
+  background-color: white;
+}
+
+section table th, section table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #fff;
+}
+
+section table th {
+  color: #4b4b4b;
+  text-transform: uppercase;
+  font: 500 0.75rem Roboto, sans-serif;
+  text-align: left;
+}
+
+section table td {
+  font-size: 0.875rem;
+}
+
+section table td a {
+  color: blueviolet;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  line-height: 1.4rem;
+  font-size: 1rem;
+}
+
+section table td a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  section {
+    display: none;
+  }
+}
+
+.formModal {
+  display: none;
+}
+
+.formModal form {
+  background-color: #fff;
+}
+
+.comingsoon {
+  display: none;
+  padding: 1rem;
+}
+
+.comingsoon h2 {
+  color: #4b4b4b;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+}
+
+@media (max-width: 720px) {
+  .comingsoon {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */

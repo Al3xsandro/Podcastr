@@ -19,14 +19,44 @@
             </li>
         </nav>
     </header>
-    <main>
+    
+    <section>
         <div class="title">
             <h2>Meus episodios</h2>
         </div>
-        <button class="addEpisode">Adicionar</button>
-        <!-- <div class="form">
-            <label>Titulo</label>
-        </div> -->
-    </main>
+        <table>
+            <thead>
+                <tr>
+                  <th>PODCAST</th>
+                  <th>Título</th>
+                  <th>Data</th>
+                  <th>Opções</th>
+                </tr>
+              </thead>
+              <tbody>
+                    <tr>
+                      <td>{episode.id}</td>
+                      <td>{episode.title}</td>
+                      <td>{episode.published_at}</td>
+                      <td>
+                        <a href="/episode/delete">deletar</a>
+                      </td>
+                    </tr>
+              </tbody>
+        </table>
+        <button class="addEpisode" onclick="">Adicionar</button>
+    </section>
+
+    <div class="formModal">
+        <form>
+            
+        </form>
+    </div>
+
+    <div class="comingsoon">
+        <h2>Em breve</h2>
+    </div>
+
+    <script src="/script.js"></script>
 </body>
 </html> 

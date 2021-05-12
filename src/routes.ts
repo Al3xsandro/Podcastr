@@ -6,7 +6,8 @@ import {
     insertEpisode,
     getEpisodes,
     getEpisodeSlog,
-    sendFileEpisode 
+    sendFileEpisode, 
+    deleteEpisode
 } from './controllers';
 
 const routes = Router();
@@ -16,15 +17,16 @@ const views = __dirname + '/views/';
 
 // template
 routes.get('/', (req: Request, res: Response) => {
-    res.render(views + 'index') 
+    res.render(views + 'index')
 });
 
 // api 
 
 routes.get('/episodes', getEpisodes);
 routes.get('/episodes/:slog', getEpisodeSlog);
-routes.post('/episodes/insert', insertEpisode);
-routes.post('/episodes/insert/file', sendFileEpisode);
+routes.post('/episode/insert', insertEpisode);
+routes.post('/episode/insert/file', sendFileEpisode);
+routes.get('/episode/delete/:id', deleteEpisode);
 
 // error 404
 routes.use('/', (req: Request, res: Response) => {
