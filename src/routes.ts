@@ -7,21 +7,17 @@ import {
     getEpisodes,
     getEpisodeSlog,
     sendFileEpisode, 
-    deleteEpisode
+    deleteEpisode,
+    loadIndexPage
 } from './controllers';
 
 const routes = Router();
-const views = __dirname + '/views/';
 
 // Routes
 
 // template
-routes.get('/', (req: Request, res: Response) => {
-    res.render(views + 'index')
-});
-
+routes.get('/', loadIndexPage);
 // api 
-
 routes.get('/episodes', getEpisodes);
 routes.get('/episodes/:slog', getEpisodeSlog);
 routes.post('/episode/insert', insertEpisode);

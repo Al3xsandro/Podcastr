@@ -4,11 +4,13 @@ import getEpisodeSlog from './getEpisodeSlog';
 import insertEpisode from './insertEpisode';
 import sendFileEpisode from './sendFileEpisode';
 import deleteEpisode from './deleteEpisode';
+import loadIndexPage from './loadIndexPage';
 
 export { 
     getEpisodes,
     getEpisodeSlog,
     insertEpisode,
     sendFileEpisode,
-    deleteEpisode
+    deleteEpisode,
+    loadIndexPage
 };

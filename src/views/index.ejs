@@ -9,16 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="/images/logo.svg" alt="logo">
-        </div>
-        <nav>
-            <li>
-                <a>Inicio</a>
-            </li>
-        </nav>
-    </header>
+    <%- include('partials/header') %> 
+    
     
     <section>
         <div class="title">
@@ -27,35 +19,30 @@
         <table>
             <thead>
                 <tr>
-                  <th>PODCAST</th>
-                  <th>Título</th>
-                  <th>Data</th>
-                  <th>Opções</th>
+                <th>PODCAST</th>
+                <th>Título</th>
+                <th>Data</th>
+                <th>Opções</th>
                 </tr>
-              </thead>
-              <tbody>
-                    <tr>
-                      <td>{episode.id}</td>
-                      <td>{episode.title}</td>
-                      <td>{episode.published_at}</td>
-                      <td>
-                        <a href="/episode/delete">deletar</a>
-                      </td>
-                    </tr>
-              </tbody>
-        </table>
+            </thead>
+            <tbody>
+                <% episode.map(episode => { %>
+                <tr>
+                <td><%= episode.id %></td>
+                <td><%= episode.title %></td>
+                <td><%= episode.published_at %></td>
+                <td>
+                    <a class="show" href="<%= process.env.URL + process.env.ROUTE %><%= episode.slog %>">abrir</a>
+                    <a class="delete" href="/episode/delete/<%= episode.id %>">excluir</a>
+                </td>
+                </tr>
+            </tbody>
+            <% }); %>
+        </table> 
         <button class="addEpisode" onclick="">Adicionar</button>
     </section>
 
-    <div class="formModal">
-        <form>
-            
-        </form>
-    </div>
-
-    <div class="comingsoon">
-        <h2>Em breve</h2>
-    </div>
+    <%- include('partials/comingsoon') %> 
 
     <script src="/script.js"></script>
 </body>

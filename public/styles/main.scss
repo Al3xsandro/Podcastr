@@ -47,7 +47,39 @@ section {
 
         border-radius: 4px;
         border: 1px solid rgb(204, 204, 204);
-        background-color: blue;
+        background-color: rgb(33, 33, 245);
+        outline: none;
+        color: rgb(255, 255, 255);
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    .show {
+        padding: 7px;
+        width: 3rem;
+
+        border-radius: 4px;
+        border: 1px solid #f5f5f5;
+        background-color: #2c6cf7;
+        outline: none;
+        color: rgb(255, 255, 255);
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    .delete {
+        padding: 7px;
+        width: 3rem;
+
+        border-radius: 4px;
+        border: 1px solid #f5f5f5;
+        background-color: #f72c2c;
         outline: none;
         color: rgb(255, 255, 255);
         opacity: 0.7;
@@ -65,6 +97,8 @@ section {
         th, td {
             padding: 0.75rem 1rem;
             border-bottom: 1px solid #fff;
+
+            font-family: Roboto, sans-serif;
         }
 
         th {
