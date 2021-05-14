@@ -31,3 +31,11 @@
     4- Crie um arquivo `.env`, e configure as chaves de conexão com seu banco de dados postgres.
     5- Execute o projeto atráves do comando `npm start`.
     `Em caso de problemas ou dúvidas, entre em contato ou abra um issue!`
+    
+<h3>Configurando váriaveis ambientes</h3>
+<p>Exemplo de configuração: </p>
+    
+    CONNECTION_STRING=postgres://example:5432/example
+    PORT=8000
+    URL=https://podcastr-ruddy-eight.vercel.app/ -> url do front-end
+    ROUTE=episodes/ -> Essa rota é definida por você através do nextjs no front-end
