@@ -23,7 +23,7 @@ export default (req: Request, res: Response) => {
         return res.send(500).send("You should fill all fields")
     }
 
-    const query = `SELECT * FROM podcast INNER JOIN files ON podcast.id = files.file WHERE slog=($1)`;
+    const query = `SELECT * FROM podcast WHERE slog=($1)`;
 
     client.query(query, [slog].filter(e => !!e), (err, data) => {
         if(err){

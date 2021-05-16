@@ -20,7 +20,7 @@ type Episodes = {
 export default (req: Request, res: Response) => {
     const { _limit } = req.query;   
 
-    const query = `SELECT * FROM podcast INNER JOIN files ON podcast.id = files.file ${_limit ? 'LIMIT $1' : 'LIMIT 40'} `;
+    const query = `SELECT * FROM podcast ${_limit ? 'LIMIT $1' : 'LIMIT 40'} `;
 
     client.query(query, [_limit].filter(e => !!e), (err, data) => {
         if (err) {

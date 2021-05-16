@@ -3,12 +3,18 @@ function sendEpisode() {
     const members = document.getElementById('members').value;
     const url = document.getElementById('url').value;
     const description = document.getElementById('description').value;
+    const urlFile = document.getElementById('urlFile').value;
+    const type = document.getElementById('type').value;
+    const duration = document.getElementById('number').value;
 
     const data = {
         title: title,
         members: members,
         thumbnail: url,
-        description: description
+        description: description,
+        url: urlFile,
+        type: type,
+        duration: duration
     }
 
     fetch('/episode/insert', {

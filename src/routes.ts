@@ -6,7 +6,6 @@ import {
     insertEpisode,
     getEpisodes,
     getEpisodeSlog,
-    sendFileEpisode, 
     deleteEpisode,
     loadIndexPage
 } from './controllers';
@@ -21,7 +20,6 @@ routes.get('/', loadIndexPage);
 routes.get('/episodes', getEpisodes);
 routes.get('/episodes/:slog', getEpisodeSlog);
 routes.post('/episode/insert', insertEpisode);
-routes.post('/episode/insert/file', sendFileEpisode);
 routes.get('/episode/delete/:id', deleteEpisode);
 
 // error 404
