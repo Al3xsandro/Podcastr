@@ -11,7 +11,6 @@
 <body>
     <%- include('partials/header') %> 
     
-    
     <section>
         <div class="title">
             <h2>Meus episodios</h2>
@@ -39,11 +38,33 @@
             </tbody>
             <% }); %>
         </table> 
-        <button class="addEpisode" onclick="">Adicionar</button>
+        <button class="addEpisode">Adicionar</button>
     </section>
 
-    <%- include('partials/comingsoon') %> 
+    <div class="formModal">
+        <form class="form" onsubmit="sendEpisode()">
+            <div class="closeModal">✕</div>
+            <div class="logo">
+                <img src="/images/logo.svg" alt="logo">
+            </div>
 
+            <label>Titulo</label>   
+            <input id="title" type="name" placeholder="Título..">
+            
+            <label>Membros</label>
+            <input id="members" type="name" placeholder="Membros..">
+            
+            <label>Thumbnail</label>
+            <input id="url" type="url" placeholder="Url..">
+            
+            <label>Descrição</label>
+            <input id="description" type="text" placeholder="Descrição..">
+            <br>
+            <button>Adicionar</button>
+        </form>
+    </div>
+
+    <%- include('partials/comingsoon') %>
     <script src="/script.js"></script>
 </body>
 </html> 

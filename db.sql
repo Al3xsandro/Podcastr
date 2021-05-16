@@ -3,7 +3,11 @@ CREATE TABLE files(
   url varchar(255),
   type varchar(255),
   duration int,
-  FOREIGN KEY (file) REFERENCES podcast(id),
+  FOREIGN KEY (file),
+  CONSTRAINT fk_files
+    FOREIGN KEY(file)
+      REFERENCES podcast(id)
+      ON DELETE CASCADE
 );
 
 CREATE TABLE podcast(
@@ -13,12 +17,7 @@ CREATE TABLE podcast(
   thumbnail varchar(255),
   description varchar(255),
   published_at DATE,
-  slog varchar(255),
-  CONSTRAINT fk_files
-    FOREIGN KEY(file)
-      REFERENCES podcast(id)
-      ON DELETE CASCADE
-
+  slog varchar(255)
 );
 
 ALTER TABLE files

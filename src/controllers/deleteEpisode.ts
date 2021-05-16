@@ -6,7 +6,7 @@ export default (req: Request, res: Response) => {
     const { id } = req.params;
 
     if(!id){
-        return res.send(500).send("You should fill all fields");
+        return res.send(400).send("You should fill all fields");
     }
 
     client.query(``, (err) => {
