@@ -9,7 +9,6 @@
     GET ('/episodes', getEpisodes);
     GET ('/episodes/:slog', getEpisodeSlog);
     POST ('/episode/insert', insertEpisode);
-    POST ('/episode/insert/file', sendFileEpisode);
     GET ('/episode/delete/:id', deleteEpisode);
  
  <h3>Como usar</h3>
