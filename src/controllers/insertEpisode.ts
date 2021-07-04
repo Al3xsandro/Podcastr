@@ -69,7 +69,7 @@ export default (req: Request, res: Response) => {
             return res.status(500).send('An error was occurreded');
         }
 
-        return res.status(200).send({
+        return res.status(201).send({
             title,
             members,
             thumbnail,
