@@ -1,18 +1,18 @@
-<h2>Podcastr 🎵</h2>
+<h2 align="center">Podcastr 🎵</h2>
 
  - Versão backend do projeto "podcastr", desenvolvido durante a semana do nextlevelweek.
    
     <img src="https://user-images.githubusercontent.com/63478331/117904423-b91e8600-b2a7-11eb-96a8-33d3c1ed3985.png" alt="homepage">
     
     
- <h4>Rotas :rocket:</h4>
+ ## Rotas :rocket:
     
-   - GET ('/episodes', getEpisodes);
-   - GET ('/episodes/:slog', getEpisodeSlog);
-   - POST ('/episode/insert', insertEpisode);
-   - GET ('/episode/delete/:id', deleteEpisode);
+   - `GET` ('/episodes', getEpisodes);
+   - `GET` ('/episodes/:slog', getEpisodeSlog);
+   - `POST` ('/episode/insert', insertEpisode);
+   - `GET` ('/episode/delete/:id', deleteEpisode);
  
- <h4>Como usar 📘</h4>
+ ## Como usar 📘
 
    - 1 Em seu navegador, acesse `localhost:porta/` 
    - 2 Após acessar, você vai se deparar com um mini painel de administração
@@ -20,7 +20,7 @@
 
 ---
  
- <h3>Configurando o projeto 💻</h3>
+ ## Configurando o projeto 💻
 
    - 1 Clone o repositório em seu computador.
    - 2 Verifique se você tem o nodejs instalando em seu sistema operacional.
@@ -29,7 +29,7 @@
    - 5 Execute o projeto atráves do comando `npm start`.
     `Em caso de problemas ou dúvidas, entre em contato ou abra um issue!`
     
-<h4>Configurando váriaveis ambientes</h4>
+## Configurando váriaveis ambientes
 
   - Exemplo de configuração:
     
