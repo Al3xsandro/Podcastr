@@ -1,8 +1,13 @@
 <h2 align="center">Podcastr 🎵</h2>
 
- - Versão backend do projeto "podcastr", desenvolvido durante a semana do nextlevelweek.
-   
-    <img src="https://user-images.githubusercontent.com/63478331/117904423-b91e8600-b2a7-11eb-96a8-33d3c1ed3985.png" alt="homepage">
+<p align="center">
+  <a href="/">Tecnologias 🖥️</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
+  <a href="/">Layout 🎨</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="/">Como executar ▶️</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="/">Licença 📖</a>
+</p>
+
+   <img src="https://user-images.githubusercontent.com/63478331/117904423-b91e8600-b2a7-11eb-96a8-33d3c1ed3985.png" alt="homepage">
     
     
  ## Rotas :rocket:
